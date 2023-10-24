@@ -22,7 +22,16 @@ const JobDetails = () => {
 
     useEffect(() => {
         const getJobDetails = async () => {
-            
+            try {
+                setLoading(true)
+                const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/jobs/${id}`)
+                setJobDetails(response.data)
+                setLoading(false)
+
+            } catch (error) {
+                console.log(error)
+                return <Error />
+            }
         }
 
         const getData = async () => {
@@ -33,21 +42,10 @@ const JobDetails = () => {
                 }
             })
 
-            try {
-                setLoading(true)
-                const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/jobs/${id}`)
-                setJobDetails(response.data)
-                setLoading(false)
-
-                if (user.data.applications.includes(id)) setApplied(true)
-
-            } catch (error) {
-                console.log(error)
-                return <Error />
-            }
+            if (user.data.applications.includes(id)) setApplied(true)
         }
         
-        getData()
+        if (currentUser) getData()
         getJobDetails()
 
     }, [])

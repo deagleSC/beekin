@@ -12,7 +12,7 @@ const Signup = () => {
     const [isEmailValid, setIsEmailValid] = useState(true)
     const [isPasswordValid, setIsPasswordValid] = useState(true)
     const [loading, setLoading] = useState(false)
-    const [error, setError] = useState(false)
+    // const [error, setError] = useState(false)
 
     const handleSignup = async () => {
 
@@ -32,7 +32,7 @@ const Signup = () => {
             console.log(error)
             setErrorMessage(error.response.data.message)
             setLoading(false)
-            setError(true)
+            // setError(true)
         }
     }
 
@@ -50,7 +50,7 @@ const Signup = () => {
         else setIsPasswordValid(true)
     }
 
-    if (error) return <Error />
+    // if (error) return <Error />
 
     return (
         <div className='login'

@@ -18,7 +18,7 @@ const Login = () => {
     const [isEmailValid, setIsEmailValid] = useState(true)
     const [isPasswordValid, setIsPasswordValid] = useState(true)
     const [loading, setLoading] = useState(false)
-    const [error, setError] = useState(false)
+    // const [error, setError] = useState(false)
 
     const dispatch = useDispatch()
 
@@ -52,7 +52,7 @@ const Login = () => {
             setErrorMessage(error.response.data.message)
             dispatch(loginFailed())
             setLoading(false)
-            setError(error)
+            // setError(error)
         }
     }
 
@@ -70,7 +70,7 @@ const Login = () => {
         else setIsPasswordValid(true)
     }
 
-    if (error) return <Error />
+    // if (error) return <Error />
 
     return (
         <div className='login' 

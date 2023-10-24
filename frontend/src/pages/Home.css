@@ -1,0 +1,10 @@
+.home {
+    display: flex;
+    width: '100%';
+    justify-content: space-between;
+}
+
+.home > * {
+    flex-shrink: 0;
+    flex-grow: 1;
+}

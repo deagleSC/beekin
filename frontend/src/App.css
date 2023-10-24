@@ -1,0 +1,7 @@
+.app {
+    min-height: 100vh;
+    background: rgb(239, 239, 239);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: lighten;
+}

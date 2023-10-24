@@ -1,0 +1,1 @@
+{"info":{"_postman_id":"1a00a2cb-e220-467b-9e8d-8edb692bc3cf","name":"New Collection","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},"item":[{"name":"New Request","id":"70c8d477-3854-4194-9cd7-c8735553d2bc","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[]},"response":[]}]}

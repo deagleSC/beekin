@@ -13,9 +13,9 @@ dotenv.config();
 app.use(cors())
 app.use(express.json());
 
-app.use('/auth', authRoutes)
-app.use('/jobs', jobRoutes)
-app.use('/user', userRoutes)
+app.use('/api/auth', authRoutes)
+app.use('/api/jobs', jobRoutes)
+app.use('/api/user', userRoutes)
 
 const PORT = process.env.PORT || 8000;
 

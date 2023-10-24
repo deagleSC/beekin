@@ -1,6 +1,6 @@
 # Beekin
 
-A Job Listing platform where users can browse through a list of jobs and apply.
+A Job Listing platform where users can browse through a list of jobs and apply. Built on MERN stack, backend hosted on cyclic.sh and frontend hosted on Vercel.
 
 Frontend Deployment: [beekin-umber.vercel.app/](https://beekin-umber.vercel.app/) <br />
 Backend Deployment: [vast-gold-firefly-wig.cyclic.app/api](https://vast-gold-firefly-wig.cyclic.app/api)
